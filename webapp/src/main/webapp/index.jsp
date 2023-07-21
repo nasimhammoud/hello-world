@@ -6,8 +6,8 @@
 
     <p>Current Date and Time is <span id='date-time'></span>.</p>
     <script>
-    var dt = new Date();
-    document.getElementById('date-time').innerHTML=dt;
+    //var dt = new Date();
+    //document.getElementById('date-time').innerHTML=dt;
     </script>
     <script>
     var out = document.getElementsByTagName('date-time');
