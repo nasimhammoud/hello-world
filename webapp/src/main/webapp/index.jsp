@@ -4,7 +4,7 @@
     <p>Please fill in this form to create an account.</p>
     <hr>
 
-    <p>Current Date and Time is <span id='date-time'></span>.</p>
+    <p>Current Date and Time is <span id='date-time'></span>. Hello from lebanon</p>
     <script>
     var dt = new Date();
     document.getElementById('date-time').innerHTML=dt;
