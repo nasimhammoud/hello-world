@@ -10,7 +10,7 @@
     document.getElementById('date-time').innerHTML=dt;
     </script>
     <script>
-    var out = document.getElementsByTagName('date-time')[3];
+    var out = document.getElementsByTagName('date-time');
     var speed = 1;
     var i = 0;
     function loop() {
