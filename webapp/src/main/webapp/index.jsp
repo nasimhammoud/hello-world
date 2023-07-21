@@ -17,7 +17,8 @@
         output(Math.floor(delta / 1000)); // in seconds
         // alternatively just show wall clock time:
         output(new Date().toUTCString());
-        document.getElementById('date-time').innerHTML=new Date().toUTCString();
+        var dt = new Date().toUTCString();
+        document.getElementById('date-time').innerHTML=dt;
     }, 1000); // update about every second
     
     
