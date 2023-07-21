@@ -10,16 +10,17 @@
     document.getElementById('date-time').innerHTML=dt;
     </script>
     <script>
-    var start = Date.now();
-    setInterval(function() {
-        var delta = Date.now() - start; // milliseconds elapsed since start
-        …
-        output(Math.floor(delta / 1000)); // in seconds
-        // alternatively just show wall clock time:
-        output(new Date().toUTCString());
-        var dt = new Date().toUTCString();
-        document.getElementById('date-time').innerHTML=dt;
-    }, 1000); // update about every second
+    var out = document.getElementsByTagName('date-time')[3];
+    var speed = 1;
+    var i = 0;
+    function loop() {
+        out.innerHTML = "Cycles " + i;
+        // do something
+        if (++i < 10) {
+            setTimeout(loop, speed);
+        }
+    }
+    loop();
     
     
     </script>
