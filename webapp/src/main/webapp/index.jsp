@@ -11,7 +11,7 @@
     </script>
     <script>
     var out = document.getElementsByTagName('date-time');
-    var speed = 1;
+    var speed = 1000;
     var i = 0;
     function loop() {
         out.innerHTML = "Cycles " + i;
