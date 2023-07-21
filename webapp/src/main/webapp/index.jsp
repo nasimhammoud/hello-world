@@ -9,6 +9,19 @@
     var dt = new Date();
     document.getElementById('date-time').innerHTML=dt;
     </script>
+    <script>
+    var start = Date.now();
+    setInterval(function() {
+        var delta = Date.now() - start; // milliseconds elapsed since start
+        …
+        output(Math.floor(delta / 1000)); // in seconds
+        // alternatively just show wall clock time:
+        output(new Date().toUTCString());
+        document.getElementById('date-time').innerHTML=new Date().toUTCString();
+    }, 1000); // update about every second
+    
+    
+    </script>
 
  
     <label for="Name"><b>Enter Name</b></label>
