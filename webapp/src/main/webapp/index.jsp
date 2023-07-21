@@ -6,23 +6,8 @@
 
     <p>Current Date and Time is <span id='date-time'></span>.</p>
     <script>
-    //var dt = new Date();
-    //document.getElementById('date-time').innerHTML=dt;
-    </script>
-    <script>
-    var out = document.getElementsByTagName('date-time');
-    var speed = 1000;
-    var i = 0;
-    function loop() {
-        out.innerHTML = "Cycles " + i;
-        // do something
-        if (++i < 10) {
-            setTimeout(loop, speed);
-        }
-    }
-    loop();
-    
-    
+    var dt = new Date();
+    document.getElementById('date-time').innerHTML=dt;
     </script>
 
  
